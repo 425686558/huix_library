@@ -1,2 +1,7 @@
 all:
-	gcc -Wall -g test.c huix_str.c -I ../include
+	make -C lib 
+	make -C test
+
+clean:
+	make -C lib clean 
+	make -C test clean
