@@ -1,0 +1,20 @@
+#ifndef __HUIX_BTREE_H__
+#define __HUIX_BTREE_H__
+#include <vector>
+namespace Huix {
+
+class BTree {
+	BTree *child;
+public:
+	BTree();
+};
+
+class BTroot {
+	int kcnt;
+	BTree *child;
+public:
+	BTroot(int kcnt);
+};
+
+};
+#endif
